@@ -4,19 +4,7 @@ theme: uncover
 class:
   - lead
   - invert
-<style>
-  :root {
-    --color-background: #ddd;
-    --color-background-code: #ccc;
-    --color-background-paginate: rgba(128, 128, 128, 0.05);
-    --color-foreground: #345;
-    --color-highlight: #99c;
-    --color-highlight-hover: #aaf;
-    --color-highlight-heading: #99c;
-    --color-header: #bbb;
-    --color-header-shadow: transparent;
-  }
-</style>
+
 ---
 
 # SolidLiquidity
@@ -25,6 +13,22 @@ class:
 
 ---
 
-# Lead + gaia
+# Ticker
 
-This is a test slide using the night theme.
+Ticker is a {sector} company founded in {date}, specialising in {specialisation}. 
+
+Recent moves include expanding AI integration across Office, growing Azure, and strengthening its gaming division with Activision.
+
+def get_first_sentence(self.ticker):
+df = db.session.tickers
+sector = df sector
+date = df date
+specialisation = df specialisation
+sentence = 'Ticker is a {sector} company founded in {date}, specialising in {specialisation}.'
+return sentence
+
+def get_second_sentence(self.ticker):
+sentence = gemini - what are the recent developments with {ticker}
+return 
+
+the only way that i can think of is rss feed unpack news and then summarise recent developments but that doesn't guarantee that there will be direct relevancy to recent developments
