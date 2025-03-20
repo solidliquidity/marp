@@ -1,4 +1,4 @@
-from marp import PythonMarp
+from marp.marp import PythonMarp
 
 # Example usage
 marp_presentation = PythonMarp(theme="night", classes=["invert", "lead"])
