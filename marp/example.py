@@ -35,7 +35,7 @@ async def send_pdf_to_telegram():
     else:
         print(f"Error: PDF file {pdf_file} not found")
 
-def send_marp_presentation_to_telegram():
+def send_marp_presentation_to_telegram(html_file):
     if html_file is None:
         html_file = "marp_presentation.html"
         print(f"Using default filename: {html_file}")

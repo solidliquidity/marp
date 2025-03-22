@@ -1,5 +1,8 @@
 from setuptools import setup, find_packages
 
+with open('requirements.txt') as f:
+    requirements = f.read().splitlines()
+
 setup(
     name="marp",
     version="0.1",
@@ -8,4 +11,5 @@ setup(
     url="https://github.com/solidliquidity/marp",
     packages=find_packages(),
     python_requires='>=3.6',
+    install_requires = requirements
 )
